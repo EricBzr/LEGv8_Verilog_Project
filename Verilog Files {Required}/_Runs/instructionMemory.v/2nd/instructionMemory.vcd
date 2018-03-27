@@ -1,0 +1,40 @@
+$date
+	Wed Mar 21 22:08:18 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module instructionMemory_tb $end
+$var wire 32 ! Inst [31:0] $end
+$var reg 12 " pcAddr [11:0] $end
+$scope module inst_Memory_1 $end
+$var wire 12 # readAddr [11:0] $end
+$var wire 32 $ Inst [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11 $
+b0 #
+b0 "
+b11 !
+$end
+#5
+b110 !
+b110 $
+b100 "
+b100 #
+#10
+b10000 !
+b10000 $
+b1000 "
+b1000 #
+#15
+b100000 !
+b100000 $
+b1100 "
+b1100 #

@@ -1,0 +1,48 @@
+$date
+	Wed Mar 14 19:58:58 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ALU_Mux_tb $end
+$var wire 64 ! Out [63:0] $end
+$var reg 1 " ALUsrc $end
+$var reg 64 # R2 [63:0] $end
+$var reg 64 $ Sext [63:0] $end
+$scope module ALU_Mux_1 $end
+$var wire 1 " ALUsrc $end
+$var wire 64 % R2 [63:0] $end
+$var wire 64 & Sext [63:0] $end
+$var wire 64 ' Out [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 '
+b11 &
+b10 %
+b11 $
+b10 #
+0"
+b10 !
+$end
+#5
+b11 !
+b11 '
+1"
+#10
+b110 !
+b110 '
+0"
+b111 $
+b111 &
+b110 #
+b110 %
+#15
+b111 !
+b111 '
+1"

@@ -1,0 +1,7 @@
+iverilog -o ALUControlUnit_tb.vvp ALUControlUnit_tb.v
+
+vvp ALUControlUnit_tb.vvp
+
+
+vvp [mux_64]_tb.vvp   
+

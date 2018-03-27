@@ -1,0 +1,168 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000000662bd0 .scope module, "instructionMemory_tb" "instructionMemory_tb" 2 7;
+ .timescale 0 0;
+v00000000006bc420_0 .net "Inst", 31 0, L_0000000000704f40;  1 drivers
+v00000000006bc920_0 .var "pcAddr", 11 0;
+S_0000000000655b80 .scope module, "inst_Memory_1" "instructionMemory" 2 12, 3 9 0, S_0000000000662bd0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 12 "readAddr"
+    .port_info 1 /OUTPUT 32 "Inst"
+v0000000000655d00_0 .net "Inst", 31 0, L_0000000000704f40;  alias, 1 drivers
+v0000000000655da0_0 .net *"_s0", 7 0, L_00000000006bba20;  1 drivers
+L_00000000006bca30 .functor BUFT 1, C4<000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0000000000655e40_0 .net *"_s11", 20 0, L_00000000006bca30;  1 drivers
+L_00000000006bca78 .functor BUFT 1, C4<000000000000000000000000000000001>, C4<0>, C4<0>, C4<0>;
+v0000000000655ee0_0 .net/2u *"_s12", 32 0, L_00000000006bca78;  1 drivers
+v0000000000663020_0 .net *"_s14", 32 0, L_00000000006bc4c0;  1 drivers
+v00000000006bc740_0 .net *"_s16", 7 0, L_00000000006bc600;  1 drivers
+v00000000006bc240_0 .net *"_s18", 32 0, L_00000000006bc6a0;  1 drivers
+v00000000006bc380_0 .net *"_s2", 13 0, L_00000000006bbca0;  1 drivers
+L_00000000006bcac0 .functor BUFT 1, C4<000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v00000000006bbb60_0 .net *"_s21", 20 0, L_00000000006bcac0;  1 drivers
+L_00000000006bcb08 .functor BUFT 1, C4<000000000000000000000000000000010>, C4<0>, C4<0>, C4<0>;
+v00000000006bbac0_0 .net/2u *"_s22", 32 0, L_00000000006bcb08;  1 drivers
+v00000000006bbd40_0 .net *"_s24", 32 0, L_00000000007053a0;  1 drivers
+v00000000006bbfc0_0 .net *"_s26", 7 0, L_0000000000705440;  1 drivers
+v00000000006bc060_0 .net *"_s28", 32 0, L_0000000000706200;  1 drivers
+L_00000000006bcb50 .functor BUFT 1, C4<000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v00000000006bbe80_0 .net *"_s31", 20 0, L_00000000006bcb50;  1 drivers
+L_00000000006bcb98 .functor BUFT 1, C4<000000000000000000000000000000011>, C4<0>, C4<0>, C4<0>;
+v00000000006bc100_0 .net/2u *"_s32", 32 0, L_00000000006bcb98;  1 drivers
+v00000000006bc560_0 .net *"_s34", 32 0, L_0000000000704c20;  1 drivers
+L_00000000006bc9e8 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v00000000006bbf20_0 .net *"_s5", 1 0, L_00000000006bc9e8;  1 drivers
+v00000000006bc7e0_0 .net *"_s6", 7 0, L_00000000006bbde0;  1 drivers
+v00000000006bc880_0 .net *"_s8", 32 0, L_00000000006bc2e0;  1 drivers
+v00000000006bbc00 .array "memory_depth", 4095 0, 7 0;
+v00000000006bc1a0_0 .net "readAddr", 11 0, v00000000006bc920_0;  1 drivers
+L_00000000006bba20 .array/port v00000000006bbc00, L_00000000006bbca0;
+L_00000000006bbca0 .concat [ 12 2 0 0], v00000000006bc920_0, L_00000000006bc9e8;
+L_00000000006bbde0 .array/port v00000000006bbc00, L_00000000006bc4c0;
+L_00000000006bc2e0 .concat [ 12 21 0 0], v00000000006bc920_0, L_00000000006bca30;
+L_00000000006bc4c0 .arith/sum 33, L_00000000006bc2e0, L_00000000006bca78;
+L_00000000006bc600 .array/port v00000000006bbc00, L_00000000007053a0;
+L_00000000006bc6a0 .concat [ 12 21 0 0], v00000000006bc920_0, L_00000000006bcac0;
+L_00000000007053a0 .arith/sum 33, L_00000000006bc6a0, L_00000000006bcb08;
+L_0000000000705440 .array/port v00000000006bbc00, L_0000000000704c20;
+L_0000000000706200 .concat [ 12 21 0 0], v00000000006bc920_0, L_00000000006bcb50;
+L_0000000000704c20 .arith/sum 33, L_0000000000706200, L_00000000006bcb98;
+L_0000000000704f40 .concat [ 8 8 8 8], L_0000000000705440, L_00000000006bc600, L_00000000006bbde0, L_00000000006bba20;
+    .scope S_0000000000655b80;
+T_0 ;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 2, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 3, 0, 8;
+    %ix/load 4, 3, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 4, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 5, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 6, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 6, 0, 8;
+    %ix/load 4, 7, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 8, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 9, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 10, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 16, 0, 8;
+    %ix/load 4, 11, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 12, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 13, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 14, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 32, 0, 8;
+    %ix/load 4, 15, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 16, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 17, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 0, 0, 8;
+    %ix/load 4, 18, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %pushi/vec4 64, 0, 8;
+    %ix/load 4, 19, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000000006bbc00, 4, 0;
+    %end;
+    .thread T_0;
+    .scope S_0000000000662bd0;
+T_1 ;
+    %vpi_call 2 16 "$dumpfile", "instructionMemory.vcd" {0 0 0};
+    %vpi_call 2 17 "$dumpvars" {0 0 0};
+    %pushi/vec4 0, 0, 12;
+    %assign/vec4 v00000000006bc920_0, 0;
+    %delay 5, 0;
+    %pushi/vec4 4, 0, 12;
+    %assign/vec4 v00000000006bc920_0, 0;
+    %delay 5, 0;
+    %pushi/vec4 8, 0, 12;
+    %assign/vec4 v00000000006bc920_0, 0;
+    %delay 5, 0;
+    %pushi/vec4 12, 0, 12;
+    %assign/vec4 v00000000006bc920_0, 0;
+    %end;
+    .thread T_1;
+    .scope S_0000000000662bd0;
+T_2 ;
+    %vpi_call 2 28 "$monitor", "time=%4d : pcAddr = %b : Inst = %b", $time, v00000000006bc920_0, v00000000006bc420_0 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "instructionMemory_tb.v";
+    "./instructionMemory.v";

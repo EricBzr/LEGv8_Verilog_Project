@@ -1,0 +1,35 @@
+$date
+	Thu Mar 22 22:43:40 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module IncrPC_tb $end
+$var wire 12 ! Out [11:0] $end
+$var reg 12 " PC [11:0] $end
+$scope module IncrPC_1 $end
+$var wire 12 # PC [11:0] $end
+$var reg 12 $ Out [11:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100110000 $
+b100101100 #
+b100101100 "
+b100110000 !
+$end
+#5
+b110101101 !
+b110101101 $
+b110101001 "
+b110101001 #
+#10
+b111111000 !
+b111111000 $
+b111110100 "
+b111110100 #

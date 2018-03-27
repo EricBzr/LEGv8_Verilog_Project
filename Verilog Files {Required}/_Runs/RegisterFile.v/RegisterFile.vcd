@@ -1,0 +1,86 @@
+$date
+	Mon Mar 19 00:49:19 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module RegisterFile_tb $end
+$var wire 64 ! readData2 [63:0] $end
+$var wire 64 " readData1 [63:0] $end
+$var reg 1 # RegWrite $end
+$var reg 5 $ readRegister1 [4:0] $end
+$var reg 5 % readRegister2 [4:0] $end
+$var reg 64 & writeData [63:0] $end
+$var reg 5 ' writeReg [4:0] $end
+$scope module RegisterFile_1 $end
+$var wire 1 # RegWrite $end
+$var wire 64 ( readData1 [63:0] $end
+$var wire 64 ) readData2 [63:0] $end
+$var wire 5 * readRegister1 [4:0] $end
+$var wire 5 + readRegister2 [4:0] $end
+$var wire 64 , writeData [63:0] $end
+$var wire 5 - writeReg [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 -
+b0 ,
+b1101 +
+b1100 *
+b11111010 )
+b101101110101011 (
+b0 '
+b0 &
+b1101 %
+b1100 $
+0#
+b101101110101011 "
+b11111010 !
+$end
+#5
+b1000000 &
+b1000000 ,
+b1100 '
+b1100 -
+#10
+b1000000 "
+b1000000 (
+1#
+#15
+b1000101 &
+b1000101 ,
+b1101 '
+b1101 -
+0#
+#20
+b1000101 !
+b1000101 )
+1#
+#25
+b11001 &
+b11001 ,
+b100 '
+b100 -
+b1 !
+b1 )
+b1 %
+b1 +
+b11 "
+b11 (
+b0 $
+b0 *
+#30
+b0 &
+b0 ,
+b0 '
+b0 -
+b10 "
+b10 (
+b100 $
+b100 *
+0#

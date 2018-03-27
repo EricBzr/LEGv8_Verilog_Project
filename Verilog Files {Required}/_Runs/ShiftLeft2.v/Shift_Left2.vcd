@@ -1,0 +1,40 @@
+$date
+	Wed Mar 21 22:49:06 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Shift_Left2_tb $end
+$var wire 64 ! Out [63:0] $end
+$var reg 64 " In [63:0] $end
+$scope module Shifter_1 $end
+$var wire 64 # In [63:0] $end
+$var wire 64 $ Out [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1000 $
+b10 #
+b10 "
+b1000 !
+$end
+#5
+b10000 !
+b10000 $
+b100 "
+b100 #
+#10
+b100000 !
+b100000 $
+b1000 "
+b1000 #
+#15
+b1000000 !
+b1000000 $
+b10000 "
+b10000 #

@@ -1,0 +1,147 @@
+$date
+	Sun Mar 25 18:34:37 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Control_tb $end
+$var wire 1 ! ZeroBranch $end
+$var wire 1 " Uncondbranch $end
+$var wire 1 # RegWrite $end
+$var wire 1 $ Reg2Loc $end
+$var wire 1 % NotZeroBranch $end
+$var wire 1 & MemtoReg $end
+$var wire 1 ' MemWrite $end
+$var wire 1 ( MemRead $end
+$var wire 1 ) ALUSrc $end
+$var wire 2 * ALUOp [1:0] $end
+$var reg 1 + clock $end
+$var reg 11 , instruction [31:21] $end
+$scope module Control_1 $end
+$var wire 1 + clock $end
+$var wire 11 - instruction [31:21] $end
+$var reg 2 . ALUOp [1:0] $end
+$var reg 1 ) ALUSrc $end
+$var reg 1 ( MemRead $end
+$var reg 1 ' MemWrite $end
+$var reg 1 & MemtoReg $end
+$var reg 1 % NotZeroBranch $end
+$var reg 1 $ Reg2Loc $end
+$var reg 1 # RegWrite $end
+$var reg 1 " Uncondbranch $end
+$var reg 1 ! ZeroBranch $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 .
+b111000010 -
+b111000010 ,
+1+
+b0 *
+1)
+1(
+0'
+1&
+0%
+0$
+1#
+0"
+0!
+$end
+#5
+0+
+#10
+0#
+1'
+0&
+0(
+1$
+b111000000 ,
+b111000000 -
+1+
+#15
+0+
+#20
+1#
+0)
+0'
+0$
+b10001011000 ,
+b10001011000 -
+1+
+#25
+0+
+#30
+1)
+b10010001000 ,
+b10010001000 -
+1+
+#35
+0+
+#40
+0)
+b10 *
+b10 .
+b11001011000 ,
+b11001011000 -
+1+
+#45
+0+
+#50
+b10001010000 ,
+b10001010000 -
+1+
+#55
+0+
+#60
+b10101010000 ,
+b10101010000 -
+1+
+#65
+0+
+#70
+0#
+b1 *
+b1 .
+1!
+1$
+b10110100000 ,
+b10110100000 -
+1+
+#75
+0+
+#80
+0!
+1%
+b10110101000 ,
+b10110101000 -
+1+
+#85
+0+
+#90
+b11 *
+b11 .
+1"
+0$
+0%
+b10100000 ,
+b10100000 -
+1+
+#95
+0+
+#100
+b1 *
+b1 .
+1!
+0"
+1$
+b1010100000 ,
+b1010100000 -
+1+
+#105
+0+

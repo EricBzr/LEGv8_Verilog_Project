@@ -1,0 +1,45 @@
+$date
+	Wed Mar 21 22:24:29 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module PC_tb $end
+$var wire 12 ! inst [11:0] $end
+$var reg 12 " newInst [11:0] $end
+$scope module PC_1 $end
+$var wire 12 # inst [11:0] $end
+$var wire 12 $ newInst [11:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1001101000 $
+b1001101000 #
+b1001101000 "
+b1001101000 !
+$end
+#5
+b11011001000 !
+b11011001000 #
+b11011001000 "
+b11011001000 $
+#10
+b101011000 !
+b101011000 #
+b101011000 "
+b101011000 $
+#15
+b0 !
+b0 #
+b0 "
+b0 $
+#20
+b100111000000 !
+b100111000000 #
+b100111000000 "
+b100111000000 $

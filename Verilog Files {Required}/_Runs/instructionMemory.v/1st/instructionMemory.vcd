@@ -1,0 +1,62 @@
+$date
+	Thu Mar 15 21:37:21 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module dataMemory_tb $end
+$var wire 64 ! readData [63:0] $end
+$var reg 10 " Addr [9:0] $end
+$var reg 1 # memRead $end
+$var reg 1 $ memWrite $end
+$var reg 64 % writeData [63:0] $end
+$scope module data_Memory_1 $end
+$var wire 10 & Addr [9:0] $end
+$var wire 1 # memRead $end
+$var wire 1 $ memWrite $end
+$var wire 64 ' writeData [63:0] $end
+$var reg 64 ( readData [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+b0 '
+b0 &
+b0 %
+0$
+0#
+b0 "
+bx !
+$end
+#5
+b11 !
+b11 (
+1#
+#10
+b11 "
+b11 &
+#15
+b0 !
+b0 (
+0#
+1$
+b11001 %
+b11001 '
+#20
+b11001 !
+b11001 (
+1#
+0$
+#25
+0#
+#30
+b1000 !
+b1000 (
+1#
+b10 "
+b10 &

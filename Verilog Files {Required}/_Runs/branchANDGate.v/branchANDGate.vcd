@@ -1,0 +1,36 @@
+$date
+	Sun Mar 18 22:08:45 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module branchANDGate_tb $end
+$var wire 1 ! Out $end
+$var reg 1 " Branch $end
+$var reg 1 # Zero $end
+$scope module Mux_1 $end
+$var wire 1 " Branch $end
+$var wire 1 ! Out $end
+$var wire 1 # Zero $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1#
+1"
+1!
+$end
+#5
+0!
+0"
+#10
+0#
+#15
+1"
+#20
+1!
+1#

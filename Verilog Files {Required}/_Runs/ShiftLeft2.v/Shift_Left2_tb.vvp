@@ -1,0 +1,51 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000000657690 .scope module, "Shift_Left2_tb" "Shift_Left2_tb" 2 7;
+ .timescale 0 0;
+v0000000000622900_0 .var "In", 63 0;
+v00000000006229a0_0 .net "Out", 63 0, L_0000000000622ae0;  1 drivers
+S_0000000000657810 .scope module, "Shifter_1" "Shift_Left2" 2 12, 3 5 0, S_0000000000657690;
+ .timescale 0 0;
+    .port_info 0 /INPUT 64 "In"
+    .port_info 1 /OUTPUT 64 "Out"
+v0000000000657990_0 .net "In", 63 0, v0000000000622900_0;  1 drivers
+v0000000000656a40_0 .net "Out", 63 0, L_0000000000622ae0;  alias, 1 drivers
+v0000000000655230_0 .net *"_s2", 61 0, L_0000000000622a40;  1 drivers
+L_00000000006a9708 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v00000000006552d0_0 .net *"_s4", 1 0, L_00000000006a9708;  1 drivers
+L_0000000000622a40 .part v0000000000622900_0, 0, 62;
+L_0000000000622ae0 .concat [ 2 62 0 0], L_00000000006a9708, L_0000000000622a40;
+    .scope S_0000000000657690;
+T_0 ;
+    %vpi_call 2 16 "$dumpfile", "Shift_Left2.vcd" {0 0 0};
+    %vpi_call 2 17 "$dumpvars" {0 0 0};
+    %pushi/vec4 2, 0, 64;
+    %assign/vec4 v0000000000622900_0, 0;
+    %delay 5, 0;
+    %pushi/vec4 4, 0, 64;
+    %assign/vec4 v0000000000622900_0, 0;
+    %delay 5, 0;
+    %pushi/vec4 8, 0, 64;
+    %assign/vec4 v0000000000622900_0, 0;
+    %delay 5, 0;
+    %pushi/vec4 16, 0, 64;
+    %assign/vec4 v0000000000622900_0, 0;
+    %end;
+    .thread T_0;
+    .scope S_0000000000657690;
+T_1 ;
+    %vpi_call 2 28 "$monitor", "time=%4d : In = %b : Out = %b", $time, v0000000000622900_0, v00000000006229a0_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "Shift_Left2_tb.v";
+    "./Shift_Left2.v";

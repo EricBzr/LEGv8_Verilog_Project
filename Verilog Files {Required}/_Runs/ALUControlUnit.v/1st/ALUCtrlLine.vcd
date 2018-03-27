@@ -1,0 +1,58 @@
+$date
+	Sun Mar 18 19:54:21 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ALUControlUnit_tb $end
+$var wire 4 ! ALUCtrlLine [3:0] $end
+$var reg 2 " ALUOp [1:0] $end
+$var reg 8 # FunctCode [7:0] $end
+$scope module ALUCtrl_1 $end
+$var wire 2 $ ALUOp [1:0] $end
+$var wire 8 % FunctCode [7:0] $end
+$var reg 4 & ALUCtrlLine [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 &
+b1010 %
+b0 $
+b1010 #
+b0 "
+b10 !
+$end
+#5
+b111 !
+b111 &
+b1 "
+b1 $
+b1100 #
+b1100 %
+#10
+b10 !
+b10 &
+b10 "
+b10 $
+b10001011 #
+b10001011 %
+#15
+b1100 !
+b1100 &
+b11101010 #
+b11101010 %
+#20
+b110 !
+b110 &
+b11001011 #
+b11001011 %
+#25
+b0 !
+b0 &
+b10001010 #
+b10001010 %

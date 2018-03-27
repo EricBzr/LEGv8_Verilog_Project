@@ -1,0 +1,50 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000000655d50 .scope module, "PC_tb" "PC_tb" 2 7;
+ .timescale 0 0;
+v000000000093cba0_0 .net "inst", 11 0, L_0000000000655c00;  1 drivers
+v000000000093cc40_0 .var "newInst", 11 0;
+S_000000000093c980 .scope module, "PC_1" "PC" 2 12, 3 9 0, S_0000000000655d50;
+ .timescale 0 0;
+    .port_info 0 /INPUT 12 "newInst"
+    .port_info 1 /OUTPUT 12 "inst"
+L_0000000000655c00 .functor BUFZ 12, v000000000093cc40_0, C4<000000000000>, C4<000000000000>, C4<000000000000>;
+v0000000000655ed0_0 .net "inst", 11 0, L_0000000000655c00;  alias, 1 drivers
+v000000000093cb00_0 .net "newInst", 11 0, v000000000093cc40_0;  1 drivers
+    .scope S_0000000000655d50;
+T_0 ;
+    %vpi_call 2 16 "$dumpfile", "PC.vcd" {0 0 0};
+    %vpi_call 2 17 "$dumpvars" {0 0 0};
+    %pushi/vec4 616, 0, 12;
+    %assign/vec4 v000000000093cc40_0, 0;
+    %delay 5, 0;
+    %pushi/vec4 1736, 0, 12;
+    %assign/vec4 v000000000093cc40_0, 0;
+    %delay 5, 0;
+    %pushi/vec4 344, 0, 12;
+    %assign/vec4 v000000000093cc40_0, 0;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 12;
+    %assign/vec4 v000000000093cc40_0, 0;
+    %delay 5, 0;
+    %pushi/vec4 2496, 0, 12;
+    %assign/vec4 v000000000093cc40_0, 0;
+    %end;
+    .thread T_0;
+    .scope S_0000000000655d50;
+T_1 ;
+    %vpi_call 2 30 "$monitor", "time=%4d : newInst = %b : inst = %b", $time, v000000000093cc40_0, v000000000093cba0_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "PC_tb.v";
+    "./PC.v";

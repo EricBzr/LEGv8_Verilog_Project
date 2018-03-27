@@ -1,0 +1,36 @@
+$date
+	Sun Mar 18 22:15:38 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module branchORGate_tb $end
+$var wire 1 ! Out $end
+$var reg 1 " And $end
+$var reg 1 # UncondBr $end
+$scope module branchORGate_1 $end
+$var wire 1 " And $end
+$var wire 1 ! Out $end
+$var wire 1 # UncondBr $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1#
+1"
+1!
+$end
+#5
+0"
+#10
+0!
+0#
+#15
+1!
+1"
+#20
+1#
